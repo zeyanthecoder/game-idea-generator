@@ -1,0 +1,71 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+  }
+  
+  #game-idea-container {
+    text-align: center;
+    margin: 50px auto;
+    width: 50%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px lightgray;
+  }
+  
+  #game-idea-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: darkblue;
+    animation: fadeInTitle 1s ease-in-out;
+  }
+  
+  p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: gray;
+    opacity: 0;
+    animation: fadeInData 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  #buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: lightgray;
+    border: none;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    background-color: darkgray;
+    color: white;
+  }
+  
+  @keyframes fadeInTitle {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInData {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
